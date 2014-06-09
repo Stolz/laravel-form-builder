@@ -1,0 +1,27 @@
+{
+	"name": "stolz/zurb-foundation-laravel",
+	"description": "stevenmaguire/zurb-foundation-laravel + fix for Laravel bug #2548",
+	"authors": [
+		{
+			"name": "Stolz",
+			"homepage": "https://github.com/Stolz/zurb-foundation-laravel"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"stevenmaguire/zurb-foundation-laravel": "dev-master"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "2.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"Stolz\\Foundation": "src/"
+		}
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev",
+	"license": "MIT"
+}

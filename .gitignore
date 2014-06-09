@@ -1,0 +1,13 @@
+/build/*
+/vendor/*
+.DS_Store
+
+composer.lock
+
+# Old files
+*~
+.*~
+*.nfs00*
+*.kate-swp
+*.old
+/.inotify
