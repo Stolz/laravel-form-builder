@@ -1,6 +1,6 @@
-<?php namespace Stolz\Foundation;
+<?php namespace Stolz\LaravelFormBuilder;
 
-class FoundationServiceProvider extends \Stevenmaguire\Foundation\FoundationServiceProvider
+class ServiceProvider extends \Stevenmaguire\Foundation\FoundationServiceProvider
 {
 	/**
 	 * Register the form builder instance.
