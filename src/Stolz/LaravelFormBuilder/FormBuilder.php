@@ -109,7 +109,7 @@ class FormBuilder extends \Stevenmaguire\Foundation\FormBuilder
 				<a href="invert">'._('invert').'</a>
 			</div>';
 
-		$out .= "<ul class=\"small-block-grid-$small medium-block-grid-$medium large-block-grid-$large\">";
+		$out .= "<ul class=\"checkables small-block-grid-$small medium-block-grid-$medium large-block-grid-$large\">";
 
 		foreach($values as $value => $label)
 		{
