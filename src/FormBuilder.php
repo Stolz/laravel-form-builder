@@ -1,6 +1,6 @@
 <?php namespace Stolz\LaravelFormBuilder;
 
-class FormBuilder extends \Stevenmaguire\Foundation\FormBuilder
+class FormBuilder extends Foundation
 {
 	/**
 	 * Get the check state for a checkbox input.

@@ -1,28 +1,33 @@
 {
 	"name": "stolz/laravel-form-builder",
-	"description": "Drop in replacement for Laravel form builder with Zurb Foundation Integration and fix for Laravel bug #2548",
+	"description": "Laravel form builder with Zurb Foundation integration",
 	"keywords": ["laravel", "form", "builder", "Zurb", "Foundation"],
 	"authors": [
 		{
 			"name": "Stolz",
 			"homepage": "https://github.com/Stolz/laravel-form-builder"
+		},
+		{
+			"name" : "Steven Maguire",
+			"email" : "stevenmaguire@gmail.com",
+			"homepage" : "http://stevenmaguire.com",
+			"role" : "Developer of src/Foundation.src file"
 		}
 	],
 	"require": {
 		"php": ">=5.4.0",
-		"stevenmaguire/zurb-foundation-laravel": "dev-master"
+		"illuminate/html": "~5.0"
 	},
 	"require-dev": {
 		"squizlabs/php_codesniffer": "2.*"
 	},
 	"autoload": {
-		"psr-0": {
-			"Stolz\\LaravelFormBuilder": "src/"
+		"psr-4": {
+			"Stolz\\LaravelFormBuilder\\": "src/"
 		}
 	},
 	"config": {
 		"preferred-install": "dist"
 	},
-	"minimum-stability": "dev",
 	"license": "MIT"
 }
