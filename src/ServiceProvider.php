@@ -1,6 +1,7 @@
 <?php namespace Stolz\LaravelFormBuilder;
 
 use Illuminate\Foundation\AliasLoader;
+use Illuminate\Html\HtmlBuilder;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
 class ServiceProvider extends LaravelServiceProvider
@@ -12,6 +13,12 @@ class ServiceProvider extends LaravelServiceProvider
 	 */
 	public function register()
 	{
+		// Bind 'html' shared component to the IoC container
+		$this->app->singleton('html', function ($app) {
+
+			return new HtmlBuilder($app['url']);
+		});
+
 		// Bind 'form' shared component to the IoC container
 		$this->app->singleton('form', function ($app) {
 
@@ -34,7 +41,10 @@ class ServiceProvider extends LaravelServiceProvider
 	 */
 	public function boot()
 	{
-		// Add 'Form' facade alias
-		AliasLoader::getInstance()->alias('Form', 'Illuminate\Html\FormFacade');
+		$loader = AliasLoader::getInstance();
+
+		// Add 'Form' and 'Html' facade aliases
+		$loader->alias('Form', 'Illuminate\Html\FormFacade');
+		$loader->alias('Html', 'Illuminate\Html\HtmlFacade');
 	}
 }
