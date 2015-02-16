@@ -45,7 +45,7 @@ class Pagination extends BootstrapThreePresenter
 			return '';
 
 		$html = sprintf(
-			'<ul class="pagination" aria-label="Pagination">%s %s %s</ul></div>',
+			'<ul class="pagination" aria-label="Pagination">%s %s %s</ul>',
 			$this->getPreviousButton(),
 			$this->getLinks(),
 			$this->getNextButton()
