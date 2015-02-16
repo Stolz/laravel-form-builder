@@ -1,7 +1,7 @@
 <?php namespace Stolz\LaravelFormBuilder;
 
 /*
- * This file is borrowed from https://github.com/stevenmaguire/zurb-foundation-laravel
+ * Borrowed from https://github.com/stevenmaguire/zurb-foundation-laravel since it seems no longer maintained.
  *
  * (c) Steven Maguire <stevenmaguire@gmail.com> http://stevenmaguire.com
  *
