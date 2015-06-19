@@ -28,6 +28,8 @@
 		}
 	},
 	"config": {
+		"discard-changes": true,
+		"optimize-autoloader": true,
 		"preferred-install": "dist"
 	},
 	"license": "MIT"
